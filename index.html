@@ -3,251 +3,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dinidu Maleezha's Portfolio</title>
+    <title>Portfolio - Dinidu Maleezha</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
-            font-family: 'Poppins', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(180deg, #e3f2fd, #f9f9f9);
-        }
-
-        header {
-            background: linear-gradient(135deg, #6a11cb, #2575fc);
-            color: #fff;
-            padding: 3rem 0;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        header h1 {
-            font-size: 3.5rem;
-            font-weight: 800;
-            margin-bottom: 0.5rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-        }
-
-        header p {
-            font-size: 1.3rem;
-            margin-bottom: 1.5rem;
-        }
-
-        nav {
-            margin-top: 1rem;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1rem;
-            font-weight: 600;
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            transition: background 0.3s, color 0.3s;
-        }
-
-        nav a:hover {
-            background: #ffd700;
-            color: #333;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: auto;
-            padding: 3rem 0;
-        }
-
-        .section {
-            margin-bottom: 3rem;
-        }
-
-        .section h2 {
-            font-size: 2.8rem;
-            font-weight: 700;
-            color: #333;
-            margin-bottom: 1rem;
-            border-bottom: 4px solid #6a11cb;
-            display: inline-block;
-        }
-
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .project {
-            background: #fff;
-            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            overflow: hidden;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .project:hover {
-            transform: translateY(-12px);
-            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .project h3 {
-            background: linear-gradient(135deg, #6a11cb, #2575fc);
-            color: #fff;
             margin: 0;
-            padding: 1rem;
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #1f1f1f;
+            border-bottom: 2px solid #2c2c2c;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 400;
+        }
+        nav a:hover {
+            color: #bb86fc;
+        }
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background-color: #282828;
+            background-image: url('https://via.placeholder.com/1500x500');
+            background-size: cover;
+            background-position: center;
+            color: #ffffff;
+        }
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            color: #dddddd;
+        }
+        .about {
+            padding: 50px 20px;
+            background-color: #181818;
+            text-align: center;
+        }
+        .about h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .about p {
+            font-size: 1.2rem;
+            color: #cccccc;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+        .about ul {
+            list-style-type: none;
+            padding: 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .about ul li {
+            background-color: #1f1f1f;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            text-align: left;
+        }
+        .about ul li strong {
+            color: #bb86fc;
+        }
+        .projects {
+            padding: 50px 20px;
+        }
+        .projects h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .project {
+            background-color: #1f1f1f;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 8px;
+            border: 1px solid #2c2c2c;
+            max-width: 800px;
+        }
+        .project h4 {
+            margin: 0 0 10px;
             font-size: 1.8rem;
         }
-
         .project p {
-            padding: 1.5rem;
-            color: #555;
-            line-height: 1.6;
+            color: #bbbbbb;
+            margin: 0 0 10px;
         }
-
+        .project a {
+            color: #bb86fc;
+            text-decoration: none;
+        }
+        .project a:hover {
+            text-decoration: underline;
+        }
+        .contact {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .contact h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .contact a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            color: #ffffff;
+            background-color: #bb86fc;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contact a:hover {
+            background-color: #9a67ea;
+        }
         footer {
             text-align: center;
-            padding: 2rem 0;
-            background: #333;
-            color: #fff;
-            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            background-color: #1f1f1f;
+            border-top: 2px solid #2c2c2c;
         }
-
-        footer p {
-            margin: 0;
-            font-size: 1rem;
-        }
-
-        .social-links {
-            margin: 1.5rem 0;
-        }
-
-        .social-links a {
-            margin: 0 0.5rem;
-            color: #ffd700;
+        footer a {
+            color: #bb86fc;
             text-decoration: none;
-            font-size: 1.5rem;
-            transition: color 0.3s;
         }
-
-        .social-links a:hover {
-            color: #fff;
-        }
-
-        .contact-info {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 1rem;
-        }
-
-        .contact-card {
-            background: #fff;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .contact-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-        }
-
-        .contact-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: #2575fc;
-        }
-
-        .contact-card a {
-            text-decoration: none;
-            color: #6a11cb;
-            font-weight: 600;
-            transition: color 0.3s;
-        }
-
-        .contact-card a:hover {
-            color: #2575fc;
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Dinidu Maleezha's Portfolio</h1>
-        <p>Crafting innovative and user-friendly solutions</p>
+        <h1>Dinidu Maleezha</h1>
         <nav>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
-
-    <div class="container">
-        <section id="about" class="section">
-            <h2>About Me</h2>
-            <p>Hello! I'm Dinidu Maleezha, a passionate developer skilled in building functional and visually appealing applications. Welcome to my portfolio!</p>
-        </section>
-
-        <section id="projects" class="section">
-            <h2>Projects</h2>
-            <div class="projects">
-                <div class="project">
-                    <h3>Cap Template - CapCut Template</h3>
-                    <p>Cap Template is a convenient tool for using pre-made video editing templates from CapCut. Simply import your photos and videos to create stunning edits using templates shared by other creators. <a href="https://github.com/dinidumaleezha/Cap-Template-CapCut-Template">View on GitHub</a></p>
-                </div>
-                <div class="project">
-                    <h3>Other Repositories</h3>
-                    <p>Explore more of my work, including additional repositories and projects, on my GitHub profile. <a href="https://github.com/dinidumaleezha">Visit GitHub</a></p>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="section">
-    <h2>Contact</h2>
-    <div class="contact-info">
-        <div class="contact-card">
-            <h3>Email</h3>
-            <p>
-                <a href="mailto:dinidumaleezha@example.com">
-                    <img src="https://img.icons8.com/ios-filled/50/2575fc/email-open.png" alt="Email Icon" style="vertical-align: middle; margin-right: 8px; width: 24px;">
-                    maleezha1975@gmail.com
-                </a>
-            </p>
+    <section class="hero">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Explore my projects and learn more about my journey as a software engineer.</p>
+    </section>
+    <section class="about" id="about">
+        <h3>About Me</h3>
+        <p>Hi, I am Dinidu Maleezha, a Software Engineer with a passion for creating innovative and user-friendly solutions. With years of experience in developing applications and a focus on delivering quality, I continuously strive to improve and learn new technologies.</p>
+        <ul>
+            <li><strong>Skills:</strong> Proficient in Java, PHP, XML, HTML, C, C++, CSS, and other programming languages.</li>
+            <li><strong>Education:</strong> Bachelor's in Software Engineering from ICBT Campus.</li>
+            <li><strong>Interests:</strong> Mobile application development, web solutions, and machine learning.</li>
+        </ul>
+    </section>
+    <section class="projects" id="projects">
+        <h3>My Projects</h3>
+        <div class="project">
+            <h4>GitHub Repository</h4>
+            <p>Explore a variety of projects ranging from mobile apps to web-based solutions. My GitHub account is the central hub for all my development work.</p>
+            <a href="https://github.com/dinidumaleezha" target="_blank">Visit My GitHub</a>
         </div>
-        <div class="contact-card">
-            <h3>Phone</h3>
-            <p>
-                <img src="https://img.icons8.com/ios-filled/50/2575fc/phone.png" alt="Phone Icon" style="vertical-align: middle; margin-right: 8px; width: 24px;">
-                +94765849851
-            </p>
+        <div class="project">
+            <h4>CapCut Template App</h4>
+            <p>A dedicated app for discovering and using video editing templates from CapCut.</p>
+            <a href="https://github.com/dinidumaleezha/Cap-Template-CapCut-Template" target="_blank">Learn More</a>
         </div>
-        <div class="contact-card">
-            <h3>Social Links</h3>
-            <p>
-                <a href="https://www.linkedin.com/in/dinidumaleezha">
-                    <img src="https://img.icons8.com/ios-filled/50/2575fc/linkedin.png" alt="LinkedIn Icon" style="vertical-align: middle; margin-right: 8px; width: 24px;">
-                    LinkedIn
-                </a> |
-                <a href="https://github.com/dinidumaleezha">
-                    <img src="https://img.icons8.com/ios-filled/50/2575fc/github.png" alt="GitHub Icon" style="vertical-align: middle; margin-right: 8px; width: 24px;">
-                    GitHub
-                </a>
-            </p>
+        <div class="project">
+            <h4>Boom Music App</h4>
+            <p>A modern music streaming app featuring a sleek interface and smooth playback.</p>
+            <a href="https://github.com/dinidumaleezha/Boom-Music-App" target="_blank">Learn More</a>
         </div>
-    </div>
-</section>
-
-    </div>
-
+        <div class="project">
+            <h4>Pet Supply Management System</h4>
+            <p>The Paws Shop is an automated system designed to manage pet supply transactions. This system is tailored to meet the needs of pet owners, allowing cashiers and managers to efficiently process and manage products like pet toys, harnesses, cages, grooming products, collars, food, and more.</p>
+            <a href="https://github.com/dinidumaleezha/The-Paws-Shop" target="_blank">Learn More</a>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h3>Contact Me</h3>
+        <a href="mailto:dinidu.maleezha@example.com">Email Me</a>
+        <a href="https://linkedin.com/in/dinidumaleezha" target="_blank">LinkedIn</a>
+        <a href="https://github.com/dinidumaleezha" target="_blank">GitHub</a>
+    </section>
     <footer>
-        <p>&copy; 2024 Dinidu Maleezha's Portfolio</p>
+        <p>Designed & Developed by Dinidu Maleezha | <a href="https://github.com/dinidumaleezha" target="_blank">GitHub</a></p>
     </footer>
 </body>
 </html>
+
